@@ -1,7 +1,7 @@
 Email::Application.routes.draw do
-  get "home/add"
-  get "home/list"
-  get "home/add_process"
+  get "home/add" => 'home#add'
+  get "home/list" => 'home#list'
+  post "home/add_process" => 'home#add_process'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

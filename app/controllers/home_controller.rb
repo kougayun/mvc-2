@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def list
-		@addresses = Addres.all
+		@addresses = Address.all
   end
 
   def add
@@ -8,8 +8,8 @@ class HomeController < ApplicationController
 
   def add_process
 		a = Address.new
-		n.name = params[:email_user]
-		n.email_address = params[:email_address]
-		n.save
+		a.name = params[:email_user]
+		a.email_address = params[:email_address]
+		a.save
   end
 end
