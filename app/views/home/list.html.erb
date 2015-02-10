@@ -1,2 +1,4 @@
-<h1>Home#list</h1>
-<p>Find me in app/views/home/list.html.erb</p>
+<h1>List of email addresses</h1>
+<% @addresses.each do |address| %>
+	<p><strong><%= address.name %></strong> <%= address.email_address %></p>
+<% end %>

@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def list
+		@addresses = Addres.all
   end
 
   def add
